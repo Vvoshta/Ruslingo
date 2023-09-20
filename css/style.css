@@ -1,0 +1,57 @@
+header {
+  min-height: 400px;
+  background-color: #0B3954;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 65px;
+}
+.header__title {
+  font-family: "Unica One", sans-serif;
+  color: #BFD7EA;
+  font-size: 300px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 55px;
+  list-style: none;
+}
+
+.header-menu__item {
+  font-family: "Zilla Slab", sans-serif;
+  color: #BFD7EA;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow: overlay;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: overlay;
+  overflow-x: hidden;
+}
