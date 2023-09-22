@@ -1,0 +1,30 @@
+.reviews
+    &__title
+        color: #C81D25
+    &__descr
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &_left
+            max-width: 475px
+        &_list
+            list-style: none 
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        gap: 50px 270px
+        margin-bottom: 20px
+        &:not(:last-of-type)::after
+            content: ""
+            position: absolute
+            width: 475px
+            height: 1px
+            background-color: #000
+            opacity: 0.1
+            margin-top: 40px
+        &_name
+            cursor: pointer
+            &:hover
+                text-decoration: underline

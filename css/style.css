@@ -25,12 +25,16 @@ header {
   margin-top: 55px;
   list-style: none;
 }
-
 .header-menu__item {
   font-family: "Zilla Slab", sans-serif;
   color: #BFD7EA;
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
+}
+.header-menu__item:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .section__wrapper {
@@ -52,6 +56,7 @@ header {
 }
 
 .master-russian__section {
+  display: flex;
   min-height: 475px;
   background-color: #FF5A5F;
 }
@@ -62,6 +67,22 @@ header {
   max-width: 600px;
   color: #FFFFFF;
   margin-top: 40px;
+}
+.master-russian__right {
+  color: #FF4147;
+  font-size: 100px;
+}
+.master-russian__stairs-icon {
+  position: absolute;
+  top: 21%;
+  right: 15%;
+  transform: rotate(10deg);
+}
+.master-russian__trophy-icon {
+  position: absolute;
+  top: 26%;
+  left: 60%;
+  transform: rotate(-10deg);
 }
 
 .teachers__section {
@@ -99,6 +120,117 @@ header {
 }
 .potential__left, .potential__right {
   max-width: 600px;
+}
+
+.ready__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ready__icon {
+  font-size: 90px;
+}
+.ready__title {
+  text-align: center;
+  color: #C81D25;
+  margin-top: 115px;
+}
+.ready__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+.ready__buttons_item {
+  border: none;
+  background-color: #fff;
+  height: 40px;
+  width: 100px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.ready__buttons_item:hover {
+  text-decoration: underline;
+}
+.ready__button_join {
+  background-color: #087E8B;
+}
+.ready__button_learn {
+  background-color: #FF5A5F;
+}
+
+.icons__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.icons__item {
+  font-size: 60px;
+}
+
+.reviews__title {
+  color: #C81D25;
+}
+.reviews__descr {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reviews__descr_left {
+  max-width: 475px;
+}
+.reviews__descr_list {
+  list-style: none;
+}
+.reviews__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px 270px;
+  margin-bottom: 20px;
+}
+.reviews__item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  width: 475px;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.1;
+  margin-top: 40px;
+}
+.reviews__item_name {
+  cursor: pointer;
+}
+.reviews__item_name:hover {
+  text-decoration: underline;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer__icons i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.footer__icons i:hover {
+  color: #C81D25;
+}
+.footer__copyright {
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 *, *::before, *::after {
