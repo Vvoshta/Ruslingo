@@ -8,7 +8,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 140px 65px;
+  padding: 110px 65px;
 }
 .header__title {
   font-family: "Unica One", sans-serif;
@@ -39,7 +39,7 @@ header {
 }
 
 .section__wrapper {
-  padding: 110px 100px;
+  padding: 100px 100px;
 }
 .section__title {
   font-family: "Unica One", sans-serif;
@@ -58,7 +58,6 @@ header {
 
 .master-russian__section {
   display: flex;
-  min-height: 475px;
   background-color: #FF5A5F;
 }
 .master-russian__title {
@@ -69,13 +68,17 @@ header {
   color: #FFFFFF;
   margin-top: 40px;
 }
+.master-russian__left {
+  z-index: 1;
+}
 .master-russian__right {
   color: #FF4147;
   font-size: 100px;
+  z-index: 0;
 }
 .master-russian__stairs-icon {
   position: absolute;
-  top: 21%;
+  top: 22%;
   right: 15%;
   transform: rotate(10deg);
 }
@@ -98,9 +101,8 @@ header {
   padding-left: 50px;
 }
 .teachers__title {
-  max-width: 600px;
   color: #0B3954;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .teachers__descr {
   max-width: 450px;
@@ -108,8 +110,9 @@ header {
   margin-top: 20px;
 }
 .teachers__img {
-  max-width: 480px;
+  width: 480px;
   height: auto;
+  max-width: 100%;
 }
 
 .potential__descr {
@@ -120,7 +123,7 @@ header {
   margin-top: 20px;
 }
 .potential__left, .potential__right {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 .ready__section {
@@ -135,7 +138,7 @@ header {
 .ready__title {
   text-align: center;
   color: #C81D25;
-  margin-top: 115px;
+  margin-top: 55px;
 }
 .ready__buttons {
   display: flex;
@@ -176,7 +179,7 @@ header {
   color: #C81D25;
 }
 .reviews__descr {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -197,7 +200,8 @@ header {
 .reviews__item:not(:last-of-type)::after {
   content: "";
   position: absolute;
-  width: 475px;
+  min-width: 475px;
+  max-width: 100%;
   height: 1px;
   background-color: #000;
   opacity: 0.1;
@@ -234,6 +238,146 @@ header {
   margin-top: 20px;
 }
 
+@media (max-width: 1200px) {
+  .header__title {
+    font-size: 260px;
+  }
+  .section__wrapper {
+    padding: 60px;
+  }
+  .reviews__descr {
+    display: block;
+  }
+  .reviews__descr_left {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .reviews__descr_list {
+    max-width: 1400px;
+  }
+  .reviews__item {
+    max-width: 100%;
+  }
+  .reviews__item:not(:last-of-type)::after {
+    width: calc(100vw - 120px);
+  }
+  .teachers__section {
+    flex-direction: column;
+  }
+  .teachers__descr {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .ready__title {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .header__wrapper {
+    padding: 120px 55px;
+  }
+  .header__title {
+    font-size: 200px;
+  }
+  .section__title {
+    font-size: 42px;
+  }
+  .section__descr {
+    font-size: 18px;
+  }
+  .master-russian__stairs-icon {
+    top: 17%;
+  }
+  .master-russian__trophy-icon {
+    top: 22%;
+  }
+  .potential__descr {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .ready__icon {
+    font-size: 70px;
+  }
+  .icons__item {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 120px 55px;
+  }
+  .header__title {
+    font-size: 150px;
+  }
+  .section__wrapper {
+    padding: 60px 30px;
+  }
+  .master-russian__stairs-icon {
+    top: 16%;
+  }
+  .master-russian__trophy-icon {
+    top: 21%;
+  }
+  .teachers__icon {
+    font-size: 70px;
+  }
+  .reviews__item {
+    max-width: 100%;
+  }
+  .reviews__item:not(:last-of-type)::after {
+    width: calc(100vw - 60px);
+  }
+}
+@media (max-width: 576px) {
+  .header__title {
+    font-size: 100px;
+  }
+  .section__descr {
+    font-size: 16px;
+  }
+  .teachers__title {
+    margin-top: 20px;
+  }
+  .teachers__icon {
+    font-size: 60px;
+  }
+  .ready__icon {
+    font-size: 60px;
+  }
+  .icons__item {
+    font-size: 40px;
+  }
+  .reviews__item:not(:last-of-type)::after {
+    width: calc(90vw - 30px);
+  }
+}
+@media (max-width: 390px) {
+  .header__title {
+    font-size: 80px;
+  }
+  .section__wrapper {
+    padding: 40px 30px;
+  }
+  .section__title {
+    font-size: 37px;
+  }
+  .ready__icon {
+    font-size: 50px;
+  }
+  .icons__section {
+    gap: 60px;
+  }
+  .icons__item {
+    font-size: 30px;
+  }
+  .reviews__item {
+    gap: 40px 100px;
+  }
+  .reviews__item:not(:last-of-type)::after {
+    margin-top: 35px;
+  }
+}
 *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;

@@ -2,7 +2,7 @@
     &__title
         color: #C81D25
     &__descr
-        margin-top: 40px
+        margin-top: 20px
         display: flex
         justify-content: space-between
         align-items: flex-start
@@ -19,7 +19,8 @@
         &:not(:last-of-type)::after
             content: ""
             position: absolute
-            width: 475px
+            min-width: 475px
+            max-width: 100%
             height: 1px
             background-color: #000
             opacity: 0.1

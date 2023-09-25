@@ -1,0 +1,151 @@
+@media (max-width: 1200px)
+    .header
+        &__title
+            font-size: 260px
+
+    .section
+        &__wrapper
+            padding: 60px
+
+    .reviews
+        &__descr
+            display: block
+            &_left
+                max-width: 100%
+                margin-bottom: 40px
+            &_list
+                max-width: 1400px
+        &__item
+            max-width: 100%
+            &:not(:last-of-type)::after
+                width: calc(100vw - 120px)
+    
+    .teachers
+        &__section
+            flex-direction: column
+        &__descr
+            max-width: 100%
+            margin-bottom: 40px
+
+    .ready
+        &__title
+            margin-top: 40px
+
+@media (max-width: 992px)
+    .header
+        &__wrapper
+            padding: 120px 55px
+        &__title
+            font-size: 200px
+    
+    .section
+        &__title
+            font-size: 42px
+        &__descr
+            font-size: 18px
+
+    .master-russian
+        &__stairs
+            &-icon
+                top: 17%
+        &__trophy
+            &-icon
+                top: 22%
+
+    .potential
+        &__descr
+            flex-direction: column
+            align-items: flex-start
+            gap: 40px
+
+    .ready
+        &__icon
+            font-size: 70px
+
+    .icons
+        &__item
+            font-size: 50px
+
+@media (max-width: 768px)
+    .header
+        &__wrapper
+            padding: 120px 55px
+        &__title
+            font-size: 150px
+
+    .section
+        &__wrapper
+            padding: 60px 30px
+
+    .master-russian
+        &__stairs
+            &-icon
+                top: 16%
+        &__trophy
+            &-icon
+                top: 21%
+    
+    .teachers
+        &__icon
+            font-size: 70px
+
+    .reviews
+        &__item
+            max-width: 100%
+            &:not(:last-of-type)::after
+                width: calc(100vw - 60px)
+
+@media (max-width: 576px)
+    .header
+        &__title
+            font-size: 100px
+
+    .section
+        &__descr
+            font-size: 16px
+
+    .teachers
+        &__title
+            margin-top: 20px
+        &__icon
+            font-size: 60px
+
+    .ready
+        &__icon
+            font-size: 60px
+
+    .icons
+        &__item
+            font-size: 40px
+
+    .reviews
+        &__item
+            &:not(:last-of-type)::after
+                width: calc(90vw - 30px) // ???
+
+@media (max-width: 390px)
+    .header
+        &__title
+            font-size: 80px
+
+    .section
+        &__wrapper
+            padding: 40px 30px
+        &__title
+            font-size: 37px
+
+    .ready
+        &__icon
+            font-size: 50px
+
+    .icons
+        &__section
+            gap: 60px
+        &__item
+            font-size: 30px
+
+    .reviews
+        &__item
+            gap: 40px 100px
+            &:not(:last-of-type)::after
+                margin-top: 35px
