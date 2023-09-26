@@ -17,8 +17,9 @@
                 max-width: 1400px
         &__item
             max-width: 100%
+            gap: 0
             &:not(:last-of-type)::after
-                width: calc(100vw - 120px)
+                min-width: calc(100vw - 120px)
     
     .teachers
         &__section
@@ -91,9 +92,8 @@
 
     .reviews
         &__item
-            max-width: 100%
             &:not(:last-of-type)::after
-                width: calc(100vw - 60px)
+                min-width: calc(100vw - 60px)
 
 @media (max-width: 576px)
     .header
@@ -121,7 +121,7 @@
     .reviews
         &__item
             &:not(:last-of-type)::after
-                width: calc(90vw - 30px) // ???
+                min-width: calc(100vw - 60px) // ???
 
 @media (max-width: 390px)
     .header
@@ -132,7 +132,7 @@
         &__wrapper
             padding: 40px 30px
         &__title
-            font-size: 37px
+            font-size: 35px
 
     .ready
         &__icon

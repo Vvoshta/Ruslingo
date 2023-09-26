@@ -257,9 +257,10 @@ header {
   }
   .reviews__item {
     max-width: 100%;
+    gap: 0;
   }
   .reviews__item:not(:last-of-type)::after {
-    width: calc(100vw - 120px);
+    min-width: calc(100vw - 120px);
   }
   .teachers__section {
     flex-direction: column;
@@ -322,11 +323,8 @@ header {
   .teachers__icon {
     font-size: 70px;
   }
-  .reviews__item {
-    max-width: 100%;
-  }
   .reviews__item:not(:last-of-type)::after {
-    width: calc(100vw - 60px);
+    min-width: calc(100vw - 60px);
   }
 }
 @media (max-width: 576px) {
@@ -349,7 +347,7 @@ header {
     font-size: 40px;
   }
   .reviews__item:not(:last-of-type)::after {
-    width: calc(90vw - 30px);
+    min-width: calc(100vw - 60px);
   }
 }
 @media (max-width: 390px) {
@@ -360,7 +358,7 @@ header {
     padding: 40px 30px;
   }
   .section__title {
-    font-size: 37px;
+    font-size: 35px;
   }
   .ready__icon {
     font-size: 50px;
